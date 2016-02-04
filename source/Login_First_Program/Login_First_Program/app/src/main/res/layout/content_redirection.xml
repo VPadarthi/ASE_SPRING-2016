@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:paddingTop="100dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.vikesh.login_first_program.redirection"
+    tools:showIn="@layout/activity_redirection"
+    android:weightSum="1">
+   <!-- <TextView
+        android:layout_width="wrap_content"
+        android:text="Successful"
+        android:layout_height="wrap_content" />-->
+<!--
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_marginTop="140dp" />-->
+    <EditText
+        android:id="@+id/txt_Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="Enter the text to convert..."
+        android:layout_weight="0.04" />
+
+    <TextView
+        android:id="@+id/result_value"
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:visibility="visible"
+        android:textSize="@dimen/abc_text_size_medium_material"
+        android:textColor="#3b40c6"
+        android:layout_marginTop="20dp" />
+    <Button
+
+        android:id="@+id/btn_Search"
+        android:layout_width="118dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        style="@style/Base.Widget.AppCompat.Button"
+        android:text="Convert"
+        android:onClick="translateText"
+        android:textColor="#ba6349"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:id="@+id/btn_Logout"
+        android:onClick="logout"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="30dp"
+        android:textColor="#d92b2b" />
+
+</LinearLayout>
