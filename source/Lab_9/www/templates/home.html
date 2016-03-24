@@ -1,0 +1,27 @@
+<ion-view view-title="Home Page" ng-app="starter" ng-controller="assignment9">
+        
+
+    
+<ion-item>
+{{city1}}
+</ion-item>
+<p>{{temp}}</p>
+<p>{{desc}}</p>
+<p>{{country}}</p>
+   
+    <br> <br>
+    <ion-nav-bar class="bar-stable"></ion-nav-bar>
+       <ion-nav-buttons side="right">
+        <button class="button button-icon icon ion-camera" ng-click="photo()"></button>
+    </ion-nav-buttons>
+<ion-content>
+    <br><br><br><br><br>
+    <div class="list card" ng-if="picture">
+          <div class="item item-image">
+            <img ng-src="{{picture}}" width="100%">
+          </div>
+        </div>
+</ion-content>
+    
+    
+</ion-view>
